@@ -26,9 +26,9 @@ class Exp:
             avancaToken() # TODO
             dir = self.prim()
             if token == '*':
-                operador = 'MULT'
+                operador = '*'
             else:
-                operador = 'DIV'
+                operador = '/'
             esq = self.ec1.OpnBin(operador, esq, dir)
             token = self.ec1.proximo_token()
         return esq
@@ -40,9 +40,9 @@ class Exp:
             avancaToken() # TODO
             dir = self.exp_m()
             if token == '+':
-                operador = 'SOMA'
+                operador = '+'
             else:
-                operador = 'SUB'
+                operador = '-'
 
             esq = self.ec1.OpBin(operador, esq, dir)
             token = self.ec1.proximo_token()
