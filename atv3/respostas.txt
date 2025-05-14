@@ -1,0 +1,7 @@
+1.1 Somente na terceira expressão seria necessário o uso de imul, pois envolve uma multiplicação com número negativo.
+
+2.1 A constante 4294979641 excede o limite de um número de 32 bits, porém o registrador RAX pode manipular esse valor corretamente
+por se tratar de um registrador de 64 bits.
+
+3.1 O arquivo "runtime.s" atual não permite a impressão de valores negativos, porém podemos verificar que o valor está correto multiplicando
+o valor por -1 e colocando para imprimir.
